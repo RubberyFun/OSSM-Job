@@ -24,15 +24,18 @@ The other end of the hose attaches to the receiver.  You could use a receiver fr
 - [autoblow type receiver with a wider bottom](STL/OSSM-Receiver-flared.stl) and [cap](STL/OSSM-Receiver-cap-flared.stl)
 
 ## BOM
-You will need to buy some parts for this to work: a piston, check valves, a rubber/silicone sleeve for the receiver, a hose, and some metric screws.
+You will need to buy some parts for this to work, most importantly a piston:
 
 - [Piston from amazon for $34](https://www.amazon.com/HNJPC-Aluminum-Pneumatic-Cylinder-SC63X150/dp/B0BZYHXKFH )
 - Nuts & Bolts:
-    - 2 M3x60 screws
-    - 2 M3x25 screws
-    - 2 M3 nuts
+    - 2 M3x50 screws to join the top side of the clamps
+    - 2 M3 nuts for the above top side screws
+    - 2 M3x15 screws to attach the bottom to the OSSM faceplate
+    - 2 M4x80 screws to join the bottom side of the clamps (unless you do the through-hole mod to your OSSM)
+    - 2 M4 nuts for the above screws 
+    - optional: 2 more M3x50 screws and nuts to use with the through-hole customization to the OSSM (This makes the M4 screws redundant)
 - a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
-**or use the 3d printed receiver with:**
+#### or use the included 3d printed receiver with:
 - Receiver sleeves (also a few options here):
     - [Autoblow sleeves for \$20: ](https://autoblow.com/product/vacuglide-power-pulse-sleeve/ )
     - [Serious Kit transparent liners for £12.75: ](https://www.seriouskit.com/products/see-through-liners?variant=47351005774123 )
