@@ -21,6 +21,7 @@ The other end of the hose attaches to the receiver.  You could use a receiver fr
 - [air adaptor](STL/air-interface.stl) for connecting piston to hose
 #### optional:
 - [receiver](STL/OSSM-Receiver.stl) and [cap](STL/OSSM-Receiver-cap.stl)
+- [autoblow type receiver with a wider bottom](STL/OSSM-Receiver-flared.stl) and [cap](STL/OSSM-Receiver-cap-flared.stl)
 
 ## BOM
 You will need to buy some parts for this to work: a piston, check valves, a rubber/silicone sleeve for the receiver, a hose, and some metric screws.
