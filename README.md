@@ -13,7 +13,7 @@ The other end of the hose attaches to the receiver.  You could use a receiver fr
 - This is designed to be open source to not need a commercial CAD program.  It uses OpenSCAD which uses code for cad.  This workflow is not for everybody, but it does maximize shareability and file simplicity. (But fillets are a bitch).
 - To make customizations you will need to [download OpenSCAD](https://openscad.org) and also [install the BOSL2 library](https://github.com/BelfrySCAD/BOSL2?tab=readme-ov-file#installation)
 - You may find a dedicated code editor like VS Code more convenient for scad files
-![in action](assets/build_plate.png)
+![assembly](assets/assembled_model.png)
 
 ## 3d printed parts:
 - [top](STL/ossm-piston-clamp1.stl) and [bottom](STL/ossm-piston-clamp2.stl) clamps for securing the piston
@@ -22,6 +22,8 @@ The other end of the hose attaches to the receiver.  You could use a receiver fr
 #### optional:
 - [receiver](STL/OSSM-Receiver.stl) and [cap](STL/OSSM-Receiver-cap.stl)
 - [autoblow type receiver with a wider bottom](STL/OSSM-Receiver-flared.stl) and [cap](STL/OSSM-Receiver-cap-flared.stl)
+
+![build plate](assets/build_plate.png)
 
 ## BOM
 You will need to buy some parts for this to work, most importantly a piston:
