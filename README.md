@@ -2,7 +2,7 @@
 #### This is a drop-in attachment to quickly and reversibly convert your OSSM to a piston driven pneumatic stroker device
 
 ## Overview
-The piston attaches to the OSSM faceplate with [3d printed clamps](STL/ossm-piston-clamp1.stl) and screws. A 3d printed [linkage](STL/arm-link2.stl) attaches the piston arm to the OSSM arm...now the piston goes back and forth.  The 3d printed [air adaptor](STL/air-interface.stl) screws into the piston and the hose is stuck on top of it.  
+The piston attaches to the OSSM faceplate with [3d printed clamps](STL/OSSM-Job-Piston-Clamps.stl) and screws. A 3d printed [linkage](STL/OSSM-Job-Arm-Linkage.stl) attaches the piston arm to the OSSM arm...now the piston goes back and forth.  The 3d printed [air adaptor](STL/air-interface.stl) screws into the piston and the hose is stuck on top of it.  
 
 The other end of the hose attaches to the receiver.  You could use a receiver from any name brand stroker...otherwise, files are included to make your own!  A sheath is stretched inside the receiver and folded over the outside of each end to keep in place.  The cap is put on the far end and a one-way valve attached to the cap.  Add some carrots and you've got a stew baby!
 <p align="center">
@@ -16,12 +16,12 @@ The other end of the hose attaches to the receiver.  You could use a receiver fr
 ![assembly](assets/assembled_model.png)
 
 ## 3d printed parts:
-- [top](STL/ossm-piston-clamp1.stl) and [bottom](STL/ossm-piston-clamp2.stl) clamps for securing the piston
-- [linkage](STL/arm-link2.stl) for the toy end of the arm.
-- [air adaptor](STL/air-interface.stl) for connecting piston to hose
+- [top](STL/OSSM-Job-Piston-Clamps.stl) and bottom clamps for securing the piston (4 pieces total)
+- [linkage](STL/OSSM-Job-Arm-Linkage.stl) for the toy end of the arm.
+- [air adaptor](STL/OSSM-Job-Piston-Hose-Adaptor.stl) for connecting piston to hose
 #### optional:
-- [receiver](STL/OSSM-Receiver.stl) and [cap](STL/OSSM-Receiver-cap.stl)
-- [autoblow type receiver with a wider bottom](STL/OSSM-Receiver-flared.stl) and [cap](STL/OSSM-Receiver-cap-flared.stl)
+- [receiver](STL/OSSM-Job-Receiver.stl) and [cap](STL/OSSM-Job-Receiver-cap.stl)
+- [autoblow type receiver with a wider bottom](STL/OSSM-Job-Receiver-flared.stl) and [cap](STL/OSSM-Job-Receiver-cap-flared.stl)
 
 ![build plate](assets/build_plate.png)
 
@@ -30,12 +30,12 @@ You will need to buy some parts for this to work, most importantly a piston:
 
 - [Piston from amazon for $34](https://www.amazon.com/HNJPC-Aluminum-Pneumatic-Cylinder-SC63X150/dp/B0BZYHXKFH )
 - Nuts & Bolts:
-    - 2 M3x50 screws to join the top side of the clamps
+    - 2 M3x35 screws to join the top side of the clamps
     - 2 M3 nuts for the above top side screws
     - 2 M3x15 screws to attach the bottom to the OSSM faceplate
     - 2 M4x80 screws to join the bottom side of the clamps (unless you do the through-hole mod to your OSSM)
     - 2 M4 nuts for the above screws 
-    - optional: 2 more M3x50 screws and nuts to use with the through-hole customization to the OSSM (This makes the M4 screws redundant)
+    - **optional:** 2 M3x50 screws and nuts to use with the through-hole customization to the OSSM (This makes the M4 screws redundant)
 - a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
 #### or use the included 3d printed receiver with:
 - Receiver sleeves (also a few options here):
