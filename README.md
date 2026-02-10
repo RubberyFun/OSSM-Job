@@ -1,10 +1,10 @@
-# OSSM-Job 
+# OSSM Job 
 #### This is a drop-in attachment to quickly and reversibly convert your OSSM to a piston driven pneumatic stroker device
 
 ## Overview
-The piston attaches to the OSSM faceplate with [3d printed clamps](STL/OSSM-Job-Piston-Clamps.stl) and screws. A 3d printed [linkage](STL/OSSM-Job-Arm-Linkage.stl) attaches the piston arm to the OSSM arm...now the piston goes back and forth.  The 3d printed [air adaptor](STL/air-interface.stl) screws into the piston and the hose is stuck on top of it.  
+The piston attaches to the OSSM faceplate with [3d printed clamps](STL/OSSM-Job-Piston-Clamps.stl) and screws. A 3d printed [linkage](STL/OSSM-Job-Arm-Linkage.stl) attaches the piston arm to the OSSM arm...now the piston goes back and forth.  The 3d printed [air adaptor](STL/OSSM-Job-Piston-Hose-Adaptor.stl) screws into the piston and the hose is stuck on top of it.  
 
-The other end of the hose attaches to the receiver.  You could use a receiver from any name brand stroker...otherwise, files are included to make your own!  A sheath is stretched inside the receiver and folded over the outside of each end to keep in place.  The cap is put on the far end and a one-way valve attached to the cap.  Add some carrots and you've got a stew baby!
+The other end of the hose attaches to [the receiver](STL/OSSM-Job-Receiver-M.stl).  You could use a receiver from any name brand stroker...otherwise, files are included to [make your own](STL/OSSM-Job-Receiver-M.stl)!  A sheath is stretched inside the receiver and folded over the outside of each end to keep in place.  The cap is put on the far end and a one-way valve attached to [the cap](STL/OSSM-Job-Receiver-cap.stl).  Add some carrots and you've got a stew baby!
 <p align="center">
     <img src="assets/inaction.gif">
 </p>
@@ -20,8 +20,8 @@ The other end of the hose attaches to the receiver.  You could use a receiver fr
 - [linkage](STL/OSSM-Job-Arm-Linkage.stl) for the toy end of the arm.
 - [air adaptor](STL/OSSM-Job-Piston-Hose-Adaptor.stl) for connecting piston to hose
 #### optional:
-- [receiver](STL/OSSM-Job-Receiver.stl) and [cap](STL/OSSM-Job-Receiver-cap.stl)
-- [autoblow type receiver with a wider bottom](STL/OSSM-Job-Receiver-flared.stl) and [cap](STL/OSSM-Job-Receiver-cap-flared.stl)
+- [receiver](STL/OSSM-Job-Receiver-M.stl) and [cap](STL/OSSM-Job-Receiver-cap.stl)
+- [autoblow type receiver with a wider bottom](STL/OSSM-Job-Receiver-M-flared.stl) and [cap](STL/OSSM-Job-Receiver-cap-flared.stl)
 
 ![build plate](assets/build_plate.png)
 
@@ -65,15 +65,20 @@ You will need to buy some parts for this to work, most importantly a piston:
 - If the piston arm is moved to either extreme before the OSSM is turned on it may be under extra tension and convince the OSSM it's stuck.  It's best to start the arm in the middle of the stroke when powering on the OSSM.
 - It doesn't matter which end of the piston you screw the hose adaptor to.  It operates much quieter if you remove any other adapter from the other port so it has as much airflow as possible.
 - If you prefer a wider entrance like the Autoblow or will be using those liners use the STLs ending in "-flared".  Or to make your own STL set ```receiver_base_flare``` at the top of [scad/receiver.scad](scad/receiver.scad) to 10 (which signifies a 10mm wider diameter at the base)
+- you will need supports for the hose valve stem.  I prefer using PrusaSlicer to paint on those supports as pictured rather than enabling suports for the whole model because it tends to rough up the bottom of the receiver.
+![build plate](assets/painted_support1.png)
+![build plate](assets/painted_support2.png)
+
 
 ## Thoughts about the receiver
-It's kinda silly, perhaps risky, to 3d print the receiver but I included it to leave the option open because gatekeeping snobs suck.  You should probably just get a moulded plastic receiver that is properly manufactured. Similarly you could get some 2" PVC, add a 3/8" valve to one side, and it'll work with minor adjustments to the cap. 
+It's kinda silly, perhaps risky, to 3d print the receiver but I included it to leave the option open because gatekeeping snobs suck.  It has worked fine and been sturdy enough so far but you should probably consider getting a moulded plastic receiver that is traditionally manufactured with injection molding. Similarly you could get some 2" PVC, add a 3/8" valve to one side, and it'll work with minor adjustments to the cap. 
 
-I'm calling this out because a 3d printed receiver may not stand up to the abuse of a play session: the vacuum could overwhelm it catastrophically or more subtly crack and lose pressure, the stem could break off.  But if you understand all that and wanna give it a try have fun!
+I'm calling this out because a 3d printed receiver may not stand up to the abuse of a play session: the vacuum could overwhelm it catastrophically or more subtly crack and lose pressure, the stem could break off.  But if you understand all that and still wanna give it a try have fun!
 
 ## Related
 - For a dedicated piston driven stroker [check out Diglet48's project](https://github.com/diglet48/toy-designs/tree/main/SC63%20pneumatic%20stroker) that inspired this one.  It's a much sturdier belt design.
 - Want to control it wirelessly?  Check out the companion app [OSSM-Possum](https://github.com/RubberyFun/OSSM-Possum) featured in the above video.
+- Obviously you should know about the engine that drives this contraption [the OSSM](https://github.com/KinkyMakers/OSSM-hardware)
 
 ## Fine print
 

@@ -3,7 +3,7 @@ $fn=256;
 wall = 5;  //how thick the walls are
 receiver_id = 50;  //this is the minimum inner diameter
 receiver_base_flare = 0; //shape is 0 for Venus 2000, 10 for AutoBlow
-receiver_len = 150; //Small = 150, Medium = 180, Large = 210
+receiver_len = 180; //Small = 150, Medium = 180, Large = 210
 valve_od = 11; // 3/8 = 9.6mm for many pneumatic toy hoses, but it feels loose on the stock Venus 2000 hose, so I bumped it up
 valve_offset = 50; //how far from the bottom is the valve
 valve_len = 25;  //how far out the valve sticks
