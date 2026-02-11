@@ -30,11 +30,11 @@ You will need to buy some parts for this to work, most importantly a piston:
 
 - [Piston from amazon for $34](https://www.amazon.com/HNJPC-Aluminum-Pneumatic-Cylinder-SC63X150/dp/B0BZYHXKFH )
 - Nuts & Bolts:
-    - 2 M3x35 screws to join the top side of the clamps
-    - 2 M3 nuts for the above top side screws
-    - 2 M3x15 screws to attach the bottom to the OSSM faceplate
-    - 2 M4x80 screws to join the bottom side of the clamps (unless you do the through-hole mod to your OSSM)
-    - 2 M4 nuts for the above screws 
+    - 2 M4x40 screws to join the top side of the clamps
+    - 2 M4 nuts for the above top side screws
+    - 2 M3x15 (12mm - 16mm really) screws to attach the bottom to the OSSM faceplate
+    - 2 M4x80 screws to join the bottom side of the clamps (optionally 6-32 x 3" screws will work... or none at all if you do the through-hole mod to your OSSM)
+    - 2 nuts for the above screws 
     - **optional:** 2 M3x50 screws and nuts to use with the through-hole customization to the OSSM (This makes the M4 screws redundant)
 - a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
 #### or use the included 3d printed receiver with:

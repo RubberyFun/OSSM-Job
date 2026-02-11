@@ -5,7 +5,7 @@ piston_od=67;  //
 piston_h=250;
 pipe_od=8;
 pipe_space=2.5;
-hex_nut_d=5.75;  //7.75 for M4, 5.75 for M3
+hex_nut_d=8.25;  //7.75 for M4, 5.75 for M3, 8.25 for 6/32
 hex_nut_h=3;
 shelf_h=10;
 faceplate_h=3;
@@ -13,7 +13,7 @@ mount_d=3;
 mount_l=20;
 mount_h=piston_od + mount_d*2 + faceplate_h;
 ossm_h=33.5;
-ossm_bolt_d=3 + .5; //.5 for slop
+ossm_bolt_d=4 + .25; //.25 for slop
 ossm_bolt_offset=6;  //thought this would be 5, may be due to slop
 ossm_pitclamp_offset=10; //to get out of the way of the pitclamp arm
 first_ossm_screw=23.8;
@@ -22,6 +22,7 @@ show_ossm= false;
 show_mount=true;
 side_to_print=0; //1 for top, 2 for bottom, anything else for both. only effective is mount is the only thing showing
 
+echo(str("Mount height: ", mount_h));
 if (show_mount) {
     if (show_piston || show_ossm) {
         clamp();
@@ -30,8 +31,8 @@ if (show_mount) {
         if (side_to_print == 1 || side_to_print == 2) {
             clamp(print_side=side_to_print);
         } else {
-            clamp(print_side=1);
-            translate([0,0,-10]) clamp(print_side=2);
+            translate([0,0,-ossm_h/2 - ossm_pitclamp_offset + 5 ]) clamp(print_side=1);
+            translate([0,0,-ossm_h/2 - ossm_pitclamp_offset - 5]) clamp(print_side=2);
         }
     }
 }
@@ -62,20 +63,23 @@ module clamp(print_side=0) {
         
             //mounting screwholes
         for (x = [0:1]) {
-            translate([first_ossm_screw,-x*(mount_h+shelf_h) + shelf_h/2 +(x*-2)+1,ossm_h/2-mount_h/2 + ossm_pitclamp_offset]) { //magic +-1 to get to ossm_bolt_offset   
-            cylinder(h=mount_h,d=ossm_bolt_d);
-            
+            translate([first_ossm_screw,-x*(mount_h+shelf_h) + shelf_h/2 +(x*-2),ossm_h/2-mount_h/2 + ossm_pitclamp_offset]) { //magic +-1 to get to ossm_bolt_offset   
+                cylinder(h=mount_h,d=ossm_bolt_d);
+                
 
-            //nuts n bolts
-            translate([0,0,shelf_h])
-                cylinder(h=hex_nut_h,d=hex_nut_d,$fn=6);
+                //nuts n bolts
+                #translate([0,0,shelf_h*x + (1-x)*3.75 + (x)*ossm_pitclamp_offset])
+                    cylinder(h=hex_nut_h,d=hex_nut_d,$fn=6);
 
-            translate([0,0,mount_h-shelf_h-hex_nut_h])
-                cylinder(h=hex_nut_h,d=hex_nut_d,$fn=6);
-            }
+                translate([0,0,mount_h-shelf_h-hex_nut_h])
+                    cylinder(h=hex_nut_h,d=hex_nut_d,$fn=6);
+                }
         }
         //all the way through
-        translate([first_ossm_screw, -pipe_space, mount_h/2 - shelf_h]) cylinder(h=mount_h + shelf_h,d=ossm_bolt_d+1, center=true);  //ok, pipe_space is BS
+        translate([first_ossm_screw, -pipe_space, mount_h/2 - shelf_h]) {
+            cylinder(h=mount_h + shelf_h,d=ossm_bolt_d, center=true);  //ok, pipe_space is BS
+            translate([0,0,(mount_h/2-hex_nut_h+.25) * (print_side == 2 ? -1 : 1) + (print_side == 2 ? -2.5 : 0)]) cylinder(h=hex_nut_h,d=hex_nut_d,$fn=6);
+        }
 
 
         //erase top or bottom half for printing
