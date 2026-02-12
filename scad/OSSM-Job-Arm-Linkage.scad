@@ -7,7 +7,7 @@ hull_cutoff = 10;
 wall = 1;
 ossm_height = 25;
 arm_height = 10;
-arm_space = 60;
+arm_space = 50; //60 for SC63
 fillet = 20;
 
 module round_fillet(d, size, half=false) {

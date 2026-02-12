@@ -10,15 +10,15 @@ The other end of the hose attaches to [the receiver](STL/OSSM-Job-Receiver-M.stl
 </p>
 
 ## Customization
-- This is designed to be open source to not need a commercial CAD program.  It uses OpenSCAD which uses code for cad.  This workflow is not for everybody, but it does maximize shareability and file simplicity. (But fillets are a bitch).
+- This is designed to be open source and not need a commercial CAD program.  It uses OpenSCAD which uses code for cad.  This workflow is not for everybody, but it does maximize shareability and file simplicity. (But fillets are a bitch).
 - To make customizations you will need to [download OpenSCAD](https://openscad.org) and also [install the BOSL2 library](https://github.com/BelfrySCAD/BOSL2?tab=readme-ov-file#installation)
-- You may find a dedicated code editor like VS Code more convenient for scad files
+- You may find a dedicated code editor like [VS Code](https://code.visualstudio.com/) more convenient for scad files
 ![assembly](assets/assembled_model.png)
 
 ## 3d printed parts:
-- [top](STL/OSSM-Job-Piston-Clamps.stl) and bottom clamps for securing the piston (4 pieces total)
-- [linkage](STL/OSSM-Job-Arm-Linkage.stl) for the toy end of the arm.
-- [air adaptor](STL/OSSM-Job-Piston-Hose-Adaptor.stl) for connecting piston to hose
+- [top](STL/OSSM-Job-Piston-Clamps-SC50.stl) and bottom clamps for securing the piston (4 pieces total)
+- [linkage](STL/OSSM-Job-Arm-Linkage-SC50.stl) for the toy end of the arm.
+- [air adaptor](STL/OSSM-Job-Piston-Hose-Adaptor-SC50.stl) for connecting piston to hose
 #### optional:
 - [receiver](STL/OSSM-Job-Receiver-M.stl) and [cap](STL/OSSM-Job-Receiver-cap.stl)
 - [autoblow type receiver with a wider bottom](STL/OSSM-Job-Receiver-M-flared.stl) and [cap](STL/OSSM-Job-Receiver-cap-flared.stl)
@@ -28,21 +28,20 @@ The other end of the hose attaches to [the receiver](STL/OSSM-Job-Receiver-M.stl
 ## BOM
 You will need to buy some parts for this to work, most importantly a piston:
 
-- [Piston from amazon for $34](https://www.amazon.com/HNJPC-Aluminum-Pneumatic-Cylinder-SC63X150/dp/B0BZYHXKFH )
+- [SC50-200 Piston from amazon for $40](https://www.amazon.com/Baomain-Pneumatic-Air-Cylinder-Bore/dp/B078K8PXWN)
 - Nuts & Bolts:
-    - 2 M4x40 screws to join the top side of the clamps
-    - 2 M4 nuts for the above top side screws
-    - 2 M3x15 (12mm - 16mm really) screws to attach the bottom to the OSSM faceplate
+    - 2 M3x40 screws to join the top side of the clamps
+    - 2 M3 nuts for the above top side screws
+    - 2 M3x15 (12mm - 16mm really) screws to attach the bottom to the OSSM faceplate.  These replace the existing OSSM faceplate screws.
     - 2 M4x80 screws to join the bottom side of the clamps (optionally 6-32 x 3" screws will work... or none at all if you do the through-hole mod to your OSSM)
     - 2 nuts for the above screws 
-    - **optional:** 2 M3x50 screws and nuts to use with the through-hole customization to the OSSM (This makes the M4 screws redundant)
+    - **optional:** 2 M3x50 screws and nuts to use with the through-hole customization to the OSSM (This makes the bottom side M4 screws redundant)
 - a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
 #### or use the included 3d printed receiver with:
 - Receiver sleeves (also a few options here):
     - [Autoblow sleeves for \$20: ](https://autoblow.com/product/vacuglide-power-pulse-sleeve/ )
     - [Serious Kit transparent liners for £12.75: ](https://www.seriouskit.com/products/see-through-liners?variant=47351005774123 )
-    - [a bicycle tube for \$7](https://www.amazon.com/Standard-Bicycle-Inner-Presta-Valve/dp/B007SNUJEY)
-    - [This goat milker might work for \$13!](https://www.amazon.com/Oumefar-Milking-Machine-Replacement-Accessories/dp/B09M36F82R)
+    - [A latex 34-42 bicycle tube for \$19](https://us.challengetires.com/products/latex-inner-tube) (or a cheap 1.5 to 1.75in butyl one)
 - Check valves from \$5 - \$15 (there are a few options though you might need to adjust the diameter of the stem to fit some kinds):
     - [Original autoblow duckbill valve the receiver design is based on](https://autoblow.com/product/vacuglide-nipples-2-set/ )
     - [cheapo amazon duckbill valve](https://www.amazon.com/Compatible-Replacement-Accessories-Signature-Smartpump/dp/B0CP16F4VF)
@@ -60,7 +59,7 @@ You will need to buy some parts for this to work, most importantly a piston:
 [Link to the demonstration video](https://rubberyfun.github.io/OSSM-Job/assets/inaction.mp4)
 
 ## Quirks
-- For more stability you can customize your OSSM with through bolts in the head unit by either taking a drill to your current part, or [printing this modified OSSM Actuator with the through holes](STL/OSSM%20-%20Actuator%20-%20Body%20-%20Bottom%20-%20through-holes.stl).
+- For more stability you can customize your OSSM with through bolts in the head unit by either taking a drill to your current part, or [printing this modified OSSM Actuator with the through holes](STL/OSSM%20-%20Actuator%20-%20Body%20-%20Bottom%20-%20through-holes.stl).  If that's too much for you but its still not stable you could use short (say 10mm) wood screws to attach the other side to the OSSM.
 - You're going to want to keep the depth centered in the OSSM range so it doesn't bottom out.  There is a "stroker mode" setting at the bottom of [OSSM-Possum](https://github.com/RubberyFun/OSSM-Possum) that will do this for you automatically.
 - If the piston arm is moved to either extreme before the OSSM is turned on it may be under extra tension and convince the OSSM it's stuck.  It's best to start the arm in the middle of the stroke when powering on the OSSM.
 - It doesn't matter which end of the piston you screw the hose adaptor to.  It operates much quieter if you remove any other adapter from the other port so it has as much airflow as possible.
