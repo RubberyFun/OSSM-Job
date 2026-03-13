@@ -35,7 +35,10 @@ In addition to the printed parts above you will need to buy some parts for this 
     - 1 M4x12 or M4x10 Socket Cap Head Bolt for handle
     - 3 M4 Hex Nuts for latch and handle
 &nbsp;
-- Optional: a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
+- Optional: a pre-built receiver setup like 
+    - [The original Venus 200 receiver for $39](https://venusformen.com/shop/receiver/)
+    - [The Autoblow Vacuglide for $69](https://autoblow.com/product/vacuglide-large-accessories-pack/)
+    - [A SeriousKit receiver could be converted for £150](https://www.seriouskit.com/collections/spts/products/see-through-lined-spt)
 #### ...or use the included 3d printed receiver with:
 - Receiver sleeves (also a few options here):
     - [Original venus sleeves for about \$5 each](https://venusformen.com/shop/liner-material/)
