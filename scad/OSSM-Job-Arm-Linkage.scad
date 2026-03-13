@@ -1,63 +1,47 @@
 include <BOSL2/std.scad>
 include <BOSL2/screws.scad> 
 $fn=128;
-top_d = 30;
-bottom_d = 27;
-hull_cutoff = 10;
+top_d = 24;  
+top_pitch = 3; //M24x3 OSSM thread
+bottom_d = 16;
+bottom_pitch=1.5;  //sc32 = M10x1.25, sc50 = M16x1.5
 wall = 1;
 ossm_height = 25;
 arm_height = 10;
-arm_space = 50; //60 for SC63
+arm_space = 60; //55 for sc32, 60 for SC50, 65 for SC63
 fillet = 20;
 
-module round_fillet(d, size, half=false) {
-    difference() {
-        cylinder(d2=d + size/2, d1=d, h=size/4);
-        torus(od=d + size, id=d);
-        if (half) {
-            translate([-(d+size/2)/2,0,0]) cube([d+size/2,d+size/2,size/2], center=true);
-        }
-    }
-}
-
-
-difference() {
-    union() {
-        cylinder(h=ossm_height+arm_height,d=top_d);    
-            translate([0,0,ossm_height - fillet/4]) 
-                round_fillet(d=top_d, size=fillet, half=false);
-        
-                translate([0,0,ossm_height])  cylinder(h=arm_height,d=top_d+ fillet/2);    
-
-    }
-    translate([0,0,ossm_height]) screw_hole("M24x3", length=ossm_height,anchor=TOP,thread=true, bevel1=0, $slop=0);
-}
-
 //arm
-translate([arm_space/2,0,ossm_height + arm_height/2]) {
+difference() {
+union() {
+cylinder(h=arm_height,d=top_d+fillet);   
+translate([arm_space/2,0,arm_height/2]) {
     points = [
-        [-arm_space/2,top_d/2 + fillet/4],
-        [arm_space/2,top_d/2 - (top_d - bottom_d)/2 + fillet/4],
-        [arm_space/2,-top_d/2 + (top_d - bottom_d)/2 - fillet/4],
-        [-arm_space/2,-top_d/2 - fillet/4],
+        [-arm_space/2,top_d/2 + fillet/2],
+        [arm_space/2,top_d/2 - (top_d - bottom_d)/2 + fillet/2],
+        [arm_space/2,-top_d/2 + (top_d - bottom_d)/2 - fillet/2],
+        [-arm_space/2,-top_d/2 - fillet/2],
     ];
     linear_extrude(height=arm_height,center=true)
     polygon(points);
 }
+translate([arm_space,0,0])
+cylinder(h=arm_height,d=bottom_d+fillet);    
+}
+cylinder(h=arm_height*2+1,d=top_d,center=true);   
 
 translate([arm_space,0,0])
-difference() {
-    union() {
-        cylinder(h=ossm_height+arm_height,d=bottom_d);    
-        //scale([1,bottom_d/(bottom_d + fillet/4),1])
-            translate([0,0,ossm_height - fillet/4]) 
-                rotate([0,0,180])
-                    round_fillet(d=bottom_d, size=fillet, half=false);
-        
-        translate([0,0,ossm_height]) cylinder(h=arm_height,d=bottom_d+fillet/2);    
-
-    }
-    translate([0,0,ossm_height]) screw_hole("M16x1.5", length=ossm_height,anchor=TOP,thread=true, bevel1=0, $slop=0.1);
+cylinder(h=arm_height*2+1,d=bottom_d,center=true);    
 }
 
+//ossm nut
+ translate([arm_space * -1,0,0]) {
+  nut(str("M",top_d,"x",top_pitch),thickness=arm_height*1.5);
+ }
+ 
+ 
+//cylinder nut
+ translate([arm_space * 2,0,0])
+
+nut(str("M",bottom_d,"x",bottom_pitch),thickness=arm_height);
 

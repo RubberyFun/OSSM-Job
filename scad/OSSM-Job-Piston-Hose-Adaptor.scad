@@ -12,9 +12,9 @@ arm_space = 60;
 
  {
     difference() {
-    //screw(d=13.157, pitch=1.337, length=screw_height,anchor=TOP,thread=true, bevel1=0, $slop=0); //G1/4 for SC50....M16x1.5 fit my SC63
-        translate([0,0,screw_height/2]) threaded_rod(d=13.157, pitch=1.337, l=screw_height, thread_len=screw_height, internal=false);
-    cylinder(d = 4, h =screw_height+1);
+    translate([0,0,screw_height/2]) threaded_rod(d=13.157, pitch=1.337, l=screw_height, thread_len=screw_height, internal=false); //SC50
+     //   translate([0,0,screw_height/2]) threaded_rod(d=9.73, pitch=0.907, l=screw_height, thread_len=screw_height, internal=false);  //SC32
+    cylinder(d = 6, h =screw_height+1);
     }
 }
 

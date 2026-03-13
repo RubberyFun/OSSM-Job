@@ -19,35 +19,39 @@ The other end of the hose attaches to [the receiver](STL/OSSM-Job-Receiver-M.stl
 - [top](STL/OSSM-Job-Piston-Clamps-SC50.stl) and bottom clamps for securing the piston (4 pieces total)
 - [linkage](STL/OSSM-Job-Arm-Linkage-SC50.stl) for the toy end of the arm.
 - [air adaptor](STL/OSSM-Job-Piston-Hose-Adaptor-SC50.stl) for connecting piston to hose
+- [pitclamp mini](https://github.com/KinkyMakers/OSSM-hardware/blob/main/Documentation/ossm/Hardware/standard-printed-parts/pitclamp) for quick transfer of the OSSM motor
 #### optional:
 - [receiver](STL/OSSM-Job-Receiver-M.stl) and [cap](STL/OSSM-Job-Receiver-cap.stl)
-- [autoblow type receiver with a wider bottom](STL/OSSM-Job-Receiver-M-flared.stl) and [cap](STL/OSSM-Job-Receiver-cap-flared.stl)
+- alternative [autoblow type receiver with a wider bottom](STL/OSSM-Job-Receiver-M-flared.stl) and [cap](STL/OSSM-Job-Receiver-cap-flared.stl)
 
 ![build plate](assets/build_plate.png)
 
 ## BOM
-You will need to buy some parts for this to work, most importantly a piston:
+In addition to the printed parts above you will need to buy some parts for this to work, most importantly a piston:
 
-- [SC50-200 Piston from amazon for $40](https://www.amazon.com/Baomain-Pneumatic-Air-Cylinder-Bore/dp/B078K8PXWN)
-- Nuts & Bolts:
-    - 2 M3x40 screws to join the top side of the clamps
-    - 2 M3 nuts for the above top side screws
-    - 2 M3x15 (12mm - 16mm really) screws to attach the bottom to the OSSM faceplate.  These replace the existing OSSM faceplate screws.
-    - 2 M4x80 screws to join the bottom side of the clamps (optionally 6-32 x 3" screws will work... or none at all if you do the through-hole mod to your OSSM)
-    - 2 nuts for the above screws 
-    - **optional:** 2 M3x50 screws and nuts to use with the through-hole customization to the OSSM (This makes the bottom side M4 screws redundant)
-- a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
-#### or use the included 3d printed receiver with:
+- [SC50-200 Piston like this one from amazon for $35](https://www.amazon.com/HNJPC-Cylinder-Pneumatic-Industrial-Automation/dp/B0BZCL5859)
+- Nuts & Bolts: ([for the pitclamp](https://github.com/KinkyMakers/OSSM-hardware/blob/main/Documentation/ossm/Hardware/standard-printed-parts/pitclamp))
+    - 2 M6x15 screws to join the clamps to the mount (M5 would work)
+    - 2 M6 nuts for the above screws (M5 would work)
+    - 1 M5x20 Socket Cap Head Bolt for hinge
+    - 1 M5 Hex Nut for hinge
+    - 2 M4x25 Socket Cap Head Bolts for latch
+    - 1 M4x12 or M4x10 Socket Cap Head Bolt for handle
+    - 3 M4 Hex Nuts for latch and handle
+&nbsp;
+- Optional: a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
+#### ...or use the included 3d printed receiver with:
 - Receiver sleeves (also a few options here):
     - [Autoblow sleeves for \$20: ](https://autoblow.com/product/vacuglide-power-pulse-sleeve/ )
     - [Serious Kit transparent liners for £12.75: ](https://www.seriouskit.com/products/see-through-liners?variant=47351005774123 )
-    - [A latex 34-42 bicycle tube for \$19](https://us.challengetires.com/products/latex-inner-tube) (or a cheap 1.5 to 1.75in butyl one)
+    - [A latex 34-42 bicycle tube for \$19](https://us.challengetires.com/products/latex-inner-tube) (or a cheap 2.3in butyl one)
+    - [Buy a bit of latex \$12](https://mjtrends.com) and make your own! ($12 is enough for 24 sheaths!)
 - Check valves from \$5 - \$15 (there are a few options though you might need to adjust the diameter of the stem to fit some kinds):
     - [Original autoblow duckbill valve the receiver design is based on](https://autoblow.com/product/vacuglide-nipples-2-set/ )
     - [cheapo amazon duckbill valve](https://www.amazon.com/Compatible-Replacement-Accessories-Signature-Smartpump/dp/B0CP16F4VF)
     - [push-to-fit check valve](https://www.amazon.com/Bwintech-Straight-Pneumatic-Connect-Compressor/dp/B0CFTZZ8B2  )
 - a flexible hose with in inner diameter of 10mm (or 3/8" in freedom units).  
-    - [latex hose from amazon for $8](https://www.amazon.com/Feelers-Natural-Speargun-Slingshot-Catapult/dp/B093WBLZMP)
+    - [silicone tube from amazon for \$14](https://www.amazon.com/dp/B0CYSX8HB9) or [latex hose from amazon for $8](https://www.amazon.com/Feelers-Natural-Speargun-Slingshot-Catapult/dp/B093WBLZMP)
 
 ## Demonstration video
 
@@ -59,24 +63,26 @@ You will need to buy some parts for this to work, most importantly a piston:
 [Link to the demonstration video](https://rubberyfun.github.io/OSSM-Job/assets/inaction.mp4)
 
 ## Quirks
-- For more stability you can customize your OSSM with through bolts in the head unit by either taking a drill to your current part, or [printing this modified OSSM Actuator with the through holes](STL/OSSM%20-%20Actuator%20-%20Body%20-%20Bottom%20-%20through-holes.stl).  If that's too much for you but its still not stable you could use short (say 10mm) wood screws to attach the other side to the OSSM.
+- You will probably want to add another [Pitclamp Mini](https://github.com/KinkyMakers/OSSM-hardware/tree/main/Documentation/ossm/Hardware/standard-printed-parts/pitclamp) to your OSSM so it can be quickly converted from its regular setup to a stroker.  It's a common upgrade, endorsed by Research + Desire.
 - You're going to want to keep the depth centered in the OSSM range so it doesn't bottom out.  There is a "stroker mode" setting at the bottom of [OSSM-Possum](https://github.com/RubberyFun/OSSM-Possum) that will do this for you automatically.
+- You may hear a clicking sound from your OSSM motor.  This is likely the belt slipping.  The piston has the potential to need higher torque than the OSSM is designed for and you may need to tighten your belt.
 - If the piston arm is moved to either extreme before the OSSM is turned on it may be under extra tension and convince the OSSM it's stuck.  It's best to start the arm in the middle of the stroke when powering on the OSSM.
 - It doesn't matter which end of the piston you screw the hose adaptor to.  It operates much quieter if you remove any other adapter from the other port so it has as much airflow as possible.
-- If you prefer a wider entrance like the Autoblow or will be using those liners use the STLs ending in "-flared".  Or to make your own STL set ```receiver_base_flare``` at the top of [scad/receiver.scad](scad/receiver.scad) to 10 (which signifies a 10mm wider diameter at the base)
-- you will need supports for the hose valve stem.  I prefer using PrusaSlicer to paint on those supports as pictured rather than enabling suports for the whole model because it tends to rough up the bottom of the receiver.
+- You will probably want to add a check valve / one-way valve to the pressure tube to allow air to escape.  A dedicated device to keep receiver pressure consistent is in the works.
+- If you prefer a wider entrance like the Autoblow or will be using those liners: use the STLs ending in "-flared".  Or to make your own STL: set ```receiver_base_flare``` at the top of [scad/receiver.scad](scad/receiver.scad) to 10 (which signifies a 10mm wider diameter at the base)
+- you will need supports for the hose valve stem. Automatic might work for you if you keep them from roughing up the front of the receiver, otherwise try painting them on
 ![build plate](assets/painted_support1.png)
 ![build plate](assets/painted_support2.png)
 
 
-## Thoughts about the receiver
-It's kinda silly, perhaps risky, to 3d print the receiver but I included it to leave the option open because gatekeeping snobs suck.  It has worked fine and been sturdy enough so far but you should probably consider getting a moulded plastic receiver that is traditionally manufactured with injection molding. Similarly you could get some 2" PVC, add a 3/8" valve to one side, and it'll work with minor adjustments to the cap. 
-
-I'm calling this out because a 3d printed receiver may not stand up to the abuse of a play session: the vacuum could overwhelm it catastrophically or more subtly crack and lose pressure, the stem could break off.  But if you understand all that and still wanna give it a try have fun!
 
 ## Related
 - For a dedicated piston driven stroker [check out Diglet48's project](https://github.com/diglet48/toy-designs/tree/main/SC63%20pneumatic%20stroker) that inspired this one.  It's a much sturdier belt design.
-- Want to control it wirelessly?  Check out the companion app [OSSM-Possum](https://github.com/RubberyFun/OSSM-Possum) featured in the above video.
+- Credit goes to Frayd for the V2 concept using a Pitclamp and the support bars of the cylinder.  It is a much more efficient setup than V1.
+- Want to control it wirelessly?  Check out the companion app featured in the above video [OSSM-Possum.
+![OSSM Possum](https://rubberyfun.github.io/OSSM-Possum/public/Screenshot.png)](https://github.com/RubberyFun/OSSM-Possum)
+- Want to use it hands free?  [Check out the OSSMount!
+![OSSMount](https://rubberyfun.github.io/OSSMount/images/Screenshot_20260309_232708.png)](https://github.com/RubberyFun/OSSMount)
 - Obviously you should know about the engine that drives this contraption [the OSSM](https://github.com/KinkyMakers/OSSM-hardware)
 
 ## Fine print

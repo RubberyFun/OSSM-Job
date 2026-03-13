@@ -22,8 +22,8 @@ stem_h = 5;  //length of the cap's one-way-valve attachment
 stem_wall = 1;  //thickness of the stem wall for one-way valve attachment
 stem_recess_od = receiver_id- wall; //26;
 stem_fillet = 4;
-cap_allowance=.4; //how much extra inner diameter to give in the cap for the sheath to pass under and for printing tolerance.  may need .4 more for thick autoblow sheaths
-show_receiver=true;  //only one should be true for printing
+cap_allowance=.3; //how much extra inner diameter to give in the cap for the sheath to pass under and for printing tolerance.  may need .4 or more for thick autoblow sheaths
+show_receiver=false;  //only one should be true for printing
 show_cap=true;  //only one should be true for printing
 
 echo(str("Receiver ID at valve: ", receiver_id_at_valve_base));
@@ -118,7 +118,7 @@ module cap() {
             translate([0,0,stem_h*2]) cylinder(d=receiver_id+wall*2+cap_allowance,h=receiver_len);
 
             //inner hollow of stem
-            translate([0,0,-1]) translate([0,0,0]) cylinder(d=stem_id,h=wall+stem_h+1);
+            translate([0,0,-stem_h-wall-2]) translate([0,0,0]) cylinder(d=stem_id,h=stem_h*8);
         }
     }
 }
