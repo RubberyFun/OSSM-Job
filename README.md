@@ -1,19 +1,15 @@
 # OSSM Job 
 #### This is a drop-in attachment to quickly and reversibly convert your OSSM to a piston driven pneumatic stroker device
+<p align="center">
+    <img src="assets/inaction.gif" title="V1 in action">
+</p>
 
 ## Overview
 The piston attaches to the OSSM faceplate with [3d printed clamps](STL/OSSM-Job-Piston-Clamps.stl) and screws. A 3d printed [linkage](STL/OSSM-Job-Arm-Linkage.stl) attaches the piston arm to the OSSM arm...now the piston goes back and forth.  The 3d printed [air adaptor](STL/OSSM-Job-Piston-Hose-Adaptor.stl) screws into the piston and the hose is stuck on top of it.  
 
 The other end of the hose attaches to [the receiver](STL/OSSM-Job-Receiver-M.stl).  You could use a receiver from any name brand stroker...otherwise, files are included to [make your own](STL/OSSM-Job-Receiver-M.stl)!  A sheath is stretched inside the receiver and folded over the outside of each end to keep in place.  The cap is put on the far end and a one-way valve attached to [the cap](STL/OSSM-Job-Receiver-cap.stl).  Add some carrots and you've got a stew baby!
-<p align="center">
-    <img src="assets/inaction.gif">
-</p>
-
-## Customization
-- This is designed to be open source and not need a commercial CAD program.  It uses OpenSCAD which uses code for cad.  This workflow is not for everybody, but it does maximize shareability and file simplicity. (But fillets are a bitch).
-- To make customizations you will need to [download OpenSCAD](https://openscad.org) and also [install the BOSL2 library](https://github.com/BelfrySCAD/BOSL2?tab=readme-ov-file#installation)
-- You may find a dedicated code editor like [VS Code](https://code.visualstudio.com/) more convenient for scad files
 ![assembly](assets/assembled_model.png)
+
 
 ## 3d printed parts:
 - [top](STL/OSSM-Job-Piston-Clamps-SC50.stl) and bottom clamps for securing the piston (4 pieces total)
@@ -62,9 +58,9 @@ In addition to the printed parts above you will need to buy some parts for this 
 
 [Link to the demonstration video](https://rubberyfun.github.io/OSSM-Job/assets/inaction.mp4)
 
-## Quirks
+## The devil is in here:
 - You will probably want to add another [Pitclamp Mini](https://github.com/KinkyMakers/OSSM-hardware/tree/main/Documentation/ossm/Hardware/standard-printed-parts/pitclamp) to your OSSM so it can be quickly converted from its regular setup to a stroker.  It's a common upgrade, endorsed by Research + Desire.
-- You're going to want to keep the depth centered in the OSSM range so it doesn't bottom out.  There is a "stroker mode" setting at the bottom of [OSSM-Possum](https://github.com/RubberyFun/OSSM-Possum) that will do this for you automatically.
+- You're going to want to keep the depth centered in the OSSM range so it doesn't bottom out.  There is a "stroker mode" setting in [OSSM-Possum](https://github.com/RubberyFun/OSSM-Possum) that will do this for you automatically.
 - You may hear a clicking sound from your OSSM motor.  This is likely the belt slipping.  The piston has the potential to need higher torque than the OSSM is designed for and you may need to tighten your belt.
 - If the piston arm is moved to either extreme before the OSSM is turned on it may be under extra tension and convince the OSSM it's stuck.  It's best to start the arm in the middle of the stroke when powering on the OSSM.
 - It doesn't matter which end of the piston you screw the hose adaptor to.  It operates much quieter if you remove any other adapter from the other port so it has as much airflow as possible.
@@ -75,6 +71,10 @@ In addition to the printed parts above you will need to buy some parts for this 
 ![build plate](assets/painted_support2.png)
 
 
+## Customization
+- This is designed to be open source and not need a commercial CAD program.  It uses OpenSCAD which uses code for cad.  This workflow is not for everybody, but it does maximize shareability and file simplicity. (But fillets are a bitch).
+- To make customizations you will need to [download OpenSCAD](https://openscad.org) and also [install the BOSL2 library](https://github.com/BelfrySCAD/BOSL2?tab=readme-ov-file#installation)
+- You may find a dedicated code editor like [VS Code](https://code.visualstudio.com/) more convenient for scad files
 
 ## Related
 - For a dedicated piston driven stroker [check out Diglet48's project](https://github.com/diglet48/toy-designs/tree/main/SC63%20pneumatic%20stroker) that inspired this one.  It's a much sturdier belt design.
