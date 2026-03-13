@@ -38,10 +38,11 @@ In addition to the printed parts above you will need to buy some parts for this 
 - Optional: a pre-built receiver setup like [The Autoblow Vacuglide](https://autoblow.com/product/vacuglide-large-accessories-pack/)
 #### ...or use the included 3d printed receiver with:
 - Receiver sleeves (also a few options here):
-    - [Autoblow sleeves for \$20: ](https://autoblow.com/product/vacuglide-power-pulse-sleeve/ )
+    - [Original venus sleeves for about \$5 each](https://venusformen.com/shop/liner-material/)
+    - [Autoblow sleeves for \$20](https://autoblow.com/product/vacuglide-power-pulse-sleeve/ )
     - [Serious Kit transparent liners for £12.75: ](https://www.seriouskit.com/products/see-through-liners?variant=47351005774123 )
-    - [A latex 34-42 bicycle tube for \$19](https://us.challengetires.com/products/latex-inner-tube) (or a cheap 2.3in butyl one)
-    - [Buy a bit of latex \$12](https://mjtrends.com) and make your own! ($12 is enough for 24 sheaths!)
+    - [Buy a bit of latex \$12](https://mjtrends.com) and make your own! \$12 is enough for 24 sheaths but requires latex crafting skills.
+    - [A latex 34-42 bicycle tube for \$19](https://us.challengetires.com/products/latex-inner-tube) Only the bigger sizes will work.  The jury is out whether this is worth it...standard butyl tires are cheap but thick, TPU isn't stretchy enough, and latex tubes are rare in big enough sizes.  Anybody know where to buy thin latex tubing at 1.5" / 40mm diameter?
 - Check valves from \$5 - \$15 (there are a few options though you might need to adjust the diameter of the stem to fit some kinds):
     - [Original autoblow duckbill valve the receiver design is based on](https://autoblow.com/product/vacuglide-nipples-2-set/ )
     - [cheapo amazon duckbill valve](https://www.amazon.com/Compatible-Replacement-Accessories-Signature-Smartpump/dp/B0CP16F4VF)

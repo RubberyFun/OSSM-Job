@@ -4,7 +4,7 @@ include <BOSL2/std.scad>
 mount_d=3; //thickness of mount pieces
 mount_l=20; //width of mount pieces
 
-piston_od=52;  //piston diameter (sc32=34, sc40=42, sc50=52, sc63=67)
+piston_od=53;  //piston diameter (sc32=34, sc40=42, sc50=53, sc63=67)
 pipe_space=3; //space between cylinder and support rods (sc32-50=3, sc63=5)
 pipe_od=6 + .1; //diameter of support rods on side of piston, plus slop (sc32-50=6, sc63=6)
 
@@ -16,8 +16,8 @@ bolt_l=15;
 bolt_d=6; //.1 for slop?
 bolt_h=bolt_d*.8;  //how thick a nut would be, 80% of bolt diameter seems to work, officially 7.75 for M4, 5.75 for M3, 8.25 for 6/32
 motor_name = "57AIM V1.1"; //or "42AIM V1.1" or "iHSV57"
-show_piston=true;  //for reference, disable for printing
-show_ossm= true;  //for reference, disable for printing
+show_piston=false;  //for reference, disable for printing
+show_ossm= false;  //for reference, disable for printing
 show_mount=true;  //only this should be true for printing
 
 if (show_mount) {
