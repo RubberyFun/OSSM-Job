@@ -6,7 +6,7 @@ mount_l=20; //width of mount pieces
 
 piston_od=52;  //piston diameter (sc32=34, sc40=42, sc50=52, sc63=67)
 pipe_space=3; //space between cylinder and support rods (sc32-50=3, sc63=5)
-pipe_od=5 + .1; //diameter of support rods on side of piston, plus slop (sc32-50=5, sc63=6)
+pipe_od=6 + .1; //diameter of support rods on side of piston, plus slop (sc32-50=6, sc63=6)
 
 piston_h=292;
 cap_h=20; //the ends of the piston
